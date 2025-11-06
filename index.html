@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover PlayStation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --ps-blue: #003087;
+            --ps-dark: #0b0b0f;
+            --ps-gray: #f4f6f9;
+        }
+
+        body {
+            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg, #ffffff 0%, var(--ps-gray) 100%);
+            color: #111;
+        }
+
+        .site-header {
+            background: linear-gradient(90deg, rgba(0, 48, 135, 0.95), rgba(3, 6, 13, 0.95));
+            color: white;
+            padding: 1.8rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .site-title {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: #dfe9ff !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+        .hero-banner {
+            border-radius: 0.8rem;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(3, 6, 13, 0.25);
+        }
+
+        .section-title {
+            color: var(--ps-blue);
+            font-weight: 600;
+        }
+
+        .list-unstyled i {
+            color: var(--ps-blue);
+            margin-right: 8px;
+        }
+
+        .card-part {
+            border: none;
+            transition: 0.3s;
+        }
+
+        .card-part:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 48, 135, 0.2);
+        }
+
+        .card-part img {
+            max-height: 130px;
+            object-fit: contain;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.6rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background: #06070a;
+            color: #dfe9ff;
+            padding: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #8bb9ff;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="site-title mb-0">PLAYSTATION</h1>
+                    <small class="text-light-50">The World of Play Has No Limits</small>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#parts">Parts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-banner">
+                        <img src="bannerps.png" alt="PlayStation banner" class="img-fluid w-100">
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <h2 class="section-title">Discover PlayStation</h2>
+                    <p class="lead">
+                        PlayStation is a well-known gaming brand from Sony that has transformed the way people play
+                        since 1994.
+                        From the classic PS1 to the modern PS5 — a series of consoles, controllers, and exclusive
+                        games that create an unmatched experience for gamers around the world.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill"></i> Fast and modern console</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Adaptive controller features</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Exclusive blockbuster games</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="section-title">What is PlayStation?</h3>
+                    <p>
+                        Simply put: PlayStation is more than just a console — it’s a community. It delivers
+                        immersive gameplay, cinematic storytelling,
+                        and cutting-edge technology (like ultra-fast SSDs and stunning graphics) for players who
+                        want to truly experience the world of gaming.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="video" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <div class="col-lg-6">
+        <h4 class="section-title">Watch: PlayStation in Action</h4>
+        <p class="mb-3">
+          A short video demo showcasing PlayStation gameplay and controller features.
+        </p>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/Jw8HCFZkBds" 
+            title="PlayStation Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+  
+      <div class="col-lg-6">
+        <h5 class="section-title">Quick Guide</h5>
+        <p>
+          In the video, you’ll see how to use the controller, gameplay clips, and a quick
+          overview of the PS5. Perfect for first-time viewers or those thinking about buying one.
+        </p>
+
+        <div class="mt-3">
+          <a class="btn btn-primary me-2" href="#parts">
+            <i class="bi bi-controller"></i> View Parts
+          </a>
+          <a class="btn btn-outline-secondary" href="https://www.playstation.com" target="_blank">
+            Official PlayStation
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+    <section id="parts" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h4 class="section-title">Parts of the PlayStation</h4>
+                <p class="text-muted">A simple explanation of each part of the console and controller.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-part h-100 shadow-sm">
+                        <img src="discover-PlayStation.github.io\dualsense.webp" class="card-img-top" alt="Controller">
+                        <div class="card-body">
+                            <h6 class="card-title">DualSense Controller</h6>
+                            <p class="card-text small">Adaptive triggers and haptic feedback make gameplay feel more
+                                realistic and
+                                immersive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-part h-100 shadow-sm">
+                        <img src="2playstation.jpg" class="card-img-top" alt="Console">
+                        <div class="card-body">
+                            <h6 class="card-title">Console (PS5)</h6>
+                            <p class="card-text small">The main engine of the system: ultra-fast SSD, powerful GPU and
+                                CPU for next-gen performance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-part h-100 shadow-sm">
+                        <img src="ports.webp" class="card-img-top" alt="Ports">
+                        <div class="card-body">
+                            <h6 class="card-title">Ports & Connectivity</h6>
+                            <p class="card-text small">HDMI, USB, and Ethernet ports for TV connection, accessories, and
+                                online play.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-part h-100 shadow-sm">
+                        <img src="discdrive.jpeg" class="card-img-top" alt="Disc Drive">
+                        <div class="card-body">
+                            <h6 class="card-title">Disc Drive</h6>
+                            <p class="card-text small">Reads physical game discs for the standard PS5 version with a
+                                disc slot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 bg-dark text-light py-4">
+        <div class="container text-center">
+            <strong class="d-block fs-5">DISCOVER PLAYSTATION</strong>
+            <div>for learning purposes only</div>
+
+            <div class="mt-3 d-flex flex-column align-items-center justify-content-center">
+                <a href="https://www.playstation.com/en-us/ps4/" target="_blank"
+                    class="text-decoration-none text-light mb-1">
+                    <i class="bi bi-box-arrow-up-right"></i> Official
+                </a>
+                <span class="text-muted">© 2025</span>
+
+            <div class="mt-3 d-flex justify-content-center gap-3">
+                <a href="" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
